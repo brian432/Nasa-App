@@ -1,0 +1,1112 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap");
+nav {
+  min-height: 100vh;
+  min-width: 320px;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 5rem;
+  background-color: transparent;
+  z-index: 10;
+  background: rgba(4, 4, 4, 0.534);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+nav .logo {
+  color: #e2e2e2;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  font-weight: 600;
+}
+
+nav .nav-links* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+nav .nav-links li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1em;
+  padding: 0;
+}
+
+nav .nav-links a {
+  padding: 0.5em 0.8em;
+  color: #e2e2e2;
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav .nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+nav #hamburguesa {
+  display: none;
+  cursor: pointer;
+}
+
+nav #hamburguesa div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+nav #hamburguesa .linea1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+nav #hamburguesa .linea2 {
+  opacity: 0;
+}
+
+nav #hamburguesa .linea3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    padding: 1rem 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    background: rgba(4, 4, 4, 0.911);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    position: fixed;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    top: 8vh;
+    height: 92vh;
+    width: 100% !important;
+    background: rgba(4, 4, 4, 0.911);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  #hamburguesa {
+    display: block !important;
+  }
+  nav {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+#Inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(/public/imagenes/fondo1.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  max-width: 1920px;
+  height: 100vh;
+  position: relative;
+}
+
+#Inicio img {
+  width: 100%;
+  height: 100%;
+}
+
+#Inicio .planetaFuera {
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -100px;
+}
+
+#Inicio .siguiente {
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -100px;
+  -webkit-transform: translateY(150px) scale(2, 2);
+          transform: translateY(150px) scale(2, 2);
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+  z-index: 9;
+  cursor: pointer;
+}
+
+#Inicio .atras,
+#Inicio .atras2 {
+  display: block;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateY(100vh) scale(5, 5);
+          transform: translateY(100vh) scale(5, 5);
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+}
+
+#Inicio .atras2 {
+  -webkit-transform: translateY(70vh) scale(5, 5);
+          transform: translateY(70vh) scale(5, 5);
+}
+
+#Inicio .adelante {
+  display: block;
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  bottom: -600px;
+  -webkit-animation-name: fuera;
+          animation-name: fuera;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes fuera {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+}
+
+@keyframes fuera {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+}
+
+#Inicio .none {
+  display: none !important;
+}
+
+#Inicio #datos {
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  color: #e2e2e2;
+  text-shadow: 2px 2px 2px black;
+  letter-spacing: 0px;
+      grid-template-areas: "nada nada nada" "ul titulo info" "ul titulo info";
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+}
+
+#Inicio #datos h1 {
+  font-size: clamp(2rem, 5vw, 5rem);
+}
+
+#Inicio #datos h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+#Inicio #datos p {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+#Inicio #datos li {
+  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+}
+
+#Inicio #datos .titulo {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: titulo;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 8;
+  font-size: 1.5rem;
+  gap: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+
+#Inicio #datos .titulo h1 {
+  letter-spacing: 20px;
+  text-indent: 20px;
+  z-index: 11;
+}
+
+#Inicio #datos .ul {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: ul;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#Inicio #datos .info {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: info;
+  line-height: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#Inicio #datos button {
+  background: none;
+  border: none;
+  color: #e2e2e2;
+  cursor: pointer;
+  padding: 0.5em 0.8em;
+  color: #e2e2e2;
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeOutLeft {
+  -webkit-animation-name: fadeOutLeft;
+          animation-name: fadeOutLeft;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeOutLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeOutRight {
+  -webkit-animation-name: fadeOutRight;
+          animation-name: fadeOutRight;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeOutRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeOutRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #Inicio .siguiente {
+    width: 15vw;
+    height: 15vw;
+    top: -50px;
+    -webkit-transform: translateY(80px) scale(2, 2);
+            transform: translateY(80px) scale(2, 2);
+  }
+  #Inicio .atras,
+  #Inicio .atras2 {
+    width: 33vw;
+    height: 33vw;
+    top: 0;
+    -webkit-transform: translateY(100vh) scale(3, 3);
+            transform: translateY(100vh) scale(3, 3);
+  }
+  #Inicio .adelante {
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    bottom: -70vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #Inicio #datos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 320px;
+  }
+  #Inicio #datos .ul {
+    display: none;
+  }
+}
+
+#planetas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(/public/imagenes/fondo2.jpg);
+  color: #e2e2e2;
+  gap: 3rem;
+}
+
+#planetas .div-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  letter-spacing: 3px;
+  width: 100%;
+  gap: 3rem;
+  position: relative;
+}
+
+#planetas .div-section .div-img {
+  position: fixed;
+  top: 50px;
+  padding-right: 3rem;
+}
+
+#planetas .div-section .descripcion {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#planetas .div-section .lista {
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+#planetas .div-section div {
+  width: 50%;
+}
+
+#planetas .div-section .planetas {
+  cursor: pointer;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+@media screen and (max-width: 768px) {
+  #planetas {
+    gap: 1rem;
+  }
+  #planetas .div-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    gap: 1rem;
+  }
+  #planetas .div-section .relleno {
+    display: none;
+  }
+  #planetas .div-section .div-img {
+    position: relative;
+    top: 0;
+    padding-right: 0;
+    width: 70%;
+  }
+  #planetas .div-section .descripcion {
+    width: 100%;
+  }
+}
+
+#Nasa {
+  background-image: url(/public/imagenes/fondo3.jpg);
+  color: #e2e2e2;
+}
+
+#Nasa #ImagenAStronomica {
+  margin: 0 auto 3rem auto;
+  max-width: 1000px;
+  position: relative;
+}
+
+#Nasa #ImagenAStronomica h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+#Nasa #ImagenAStronomica .div-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#Nasa #ImagenAStronomica .div-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#Nasa #ImagenAStronomica #descripcion {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#Nasa #TierraApi {
+  text-align: center;
+}
+
+#Nasa #TierraApi .div-img {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#Nasa #TierraApi .div-img #siguiente {
+  position: absolute;
+  top: 45%;
+  right: 0;
+}
+
+#Nasa #TierraApi .div-img #anterior {
+  position: absolute;
+  top: 45%;
+  left: 0;
+}
+
+#Nasa #TierraApi .div-img #fecha {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#Nasa #TierraApi .div-img button {
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: clamp(1.5rem, 4vw, 4rem);
+  padding: 5px;
+}
+
+#Nasa #MarteApi {
+  margin-top: 3rem;
+}
+
+#Nasa #MarteApi .titulos,
+#Nasa #MarteApi .Info {
+  text-align: center;
+}
+
+#Nasa #MarteApi .camarasDescripcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 1rem;
+}
+
+#Nasa #MarteApi .camarasDescripcion .camaras {
+  max-width: 600px;
+}
+
+#Nasa #MarteApi .div-img {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#Nasa #MarteApi .div-img #siguiente {
+  position: absolute;
+  top: 45%;
+  right: 0;
+}
+
+#Nasa #MarteApi .div-img #anterior {
+  position: absolute;
+  top: 45%;
+  left: 0;
+}
+
+#Nasa #MarteApi .div-img #fecha {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#Nasa #MarteApi .div-img button {
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: clamp(1.5rem, 4vw, 4rem);
+  padding: 5px;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  -webkit-animation: lds-dual-ring 1.2s linear infinite;
+          animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@-webkit-keyframes lds-dual-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.img-carga {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  #ImagenAStronomica .div-img {
+    height: 400px !important;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #ImagenAStronomica .div-img {
+    height: 300px !important;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 320px;
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: "Orbitron", sans-serif;
+  background-image: url(/public/imagenes/fondo1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*clases globales*/
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #031d36;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.247);
+  border-radius: 10px;
+  border-right: 2px solid #031d36;
+}
+
+body,
+#root,
+.App {
+  min-height: 100vh;
+  max-width: 1920px !important;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.hover::before, .hover::after {
+  content: "";
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+
+.hover::before {
+  content: "";
+  right: 0;
+  top: 0;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  -webkit-transform: translate(-100%, 50%);
+          transform: translate(-100%, 50%);
+}
+
+.hover:after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
+  -webkit-transform: translate(100%, -50%);
+          transform: translate(100%, -50%);
+}
+
+.hover:hover:before, .hover:hover:after {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
+#Nasa,
+#planetas {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#planetas,
+#Nasa {
+  padding: 100px 3rem 0 3rem;
+}
+
+.margin {
+  margin: 2rem 0;
+}
+
+h2,
+.titulos {
+  font-size: clamp(1.8rem, 5vw, 4rem);
+  margin: 2rem 0;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+h4 {
+  font-size: clamp(1.3rem, 2vw, 2rem);
+}
+
+p {
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
+}
+
+.cargando {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  #planetas,
+  #Nasa {
+    padding: 100px 2.5rem 0 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #planetas,
+  #Nasa {
+    padding: 100px 1.5rem 0 1.5rem;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

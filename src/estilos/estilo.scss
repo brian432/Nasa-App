@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap");
+$color-texto: rgb(226, 226, 226);
+@mixin width-height {
+    min-height: 100vh;
+    min-width: 320px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+@import './header';
+@import './inicio';
+@import './planetas';
+@import './api-nasa';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff
+}
+body{
+    @include width-height;
+    font-family: "Orbitron", sans-serif;
+    background-image: url(/public/imagenes/fondo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*clases globales*/
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background: rgb(3, 29, 54);
+}
+body::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.247);
+    border-radius:10px;
+    border-right:2px solid rgb(3, 29, 54);
+}
+
+body,
+#root,
+.App {
+    min-height: 100vh;
+    max-width: 1920px!important;
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+.hover {
+    &::before,
+    &::after {
+        content: "";
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        transition: all 0.35s ease;
+        opacity: 0;
+    }
+    &::before {
+        content: "";
+        right: 0;
+        top: 0;
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        transform: translate(-100%, 50%);
+    }
+    &:after {
+        content: "";
+        left: 0;
+        bottom: 0;
+        border-bottom: 3px solid white;
+        border-left: 3px solid white;
+        transform: translate(100%, -50%);
+    }
+    &:hover:before,
+    &:hover:after {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+#Nasa,
+#planetas {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#planetas,
+#Nasa {
+    padding: 100px 3rem 0 3rem;
+}
+.margin {
+    margin: 2rem 0;
+}
+
+h2,
+.titulos {
+    font-size: clamp(1.8rem, 5vw, 4rem);
+    margin: 2rem 0;
+}
+
+h3 {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+}
+h4 {
+    font-size: clamp(1.3rem, 2vw, 2rem);
+}
+p {
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
+}
+
+.cargando {
+    display: flex;
+    height: 100vh !important;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #planetas,
+    #Nasa{
+        padding: 100px 2.5rem 0 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #planetas,
+    #Nasa {
+        padding: 100px 1.5rem 0 1.5rem;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,153 @@
+#Nasa {
+    background-image: url(/public/imagenes/fondo3.jpg);
+    color: $color-texto;
+    #ImagenAStronomica {
+        margin: 0 auto 3rem auto;
+        max-width: 1000px;
+        position: relative;
+        h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+        .div-img {
+            display: flex;
+            height: 600px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 1rem;
+            img {
+                object-fit: cover;
+            }
+        }
+        #descripcion {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+    }
+    #TierraApi {
+        text-align: center;
+        .div-img {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            #siguiente {
+                position: absolute;
+                top: 45%;
+                right: 0;
+            }
+            #anterior {
+                position: absolute;
+                top: 45%;
+                left: 0;
+            }
+            #fecha {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+            }
+            button {
+                background: none;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: clamp(1.5rem, 4vw, 4rem);
+                padding: 5px;
+            }
+        }
+    }
+    #MarteApi {
+        margin-top: 3rem;
+        .titulos,
+        .Info {
+            text-align: center;
+        }
+        .camarasDescripcion {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 1rem;
+            .camaras {
+                max-width: 600px;
+            }
+        }
+        .div-img {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            #siguiente {
+                position: absolute;
+                top: 45%;
+                right: 0;
+            }
+            #anterior {
+                position: absolute;
+                top: 45%;
+                left: 0;
+            }
+            #fecha {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+            }
+            button {
+                background: none;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: clamp(1.5rem, 4vw, 4rem);
+                padding: 5px;
+            }
+        }
+    }
+}
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.img-carga {
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #ImagenAStronomica {
+        .div-img {
+            height: 400px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #ImagenAStronomica {
+        .div-img {
+            height: 300px !important;
+        }
+    }
+}

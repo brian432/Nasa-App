@@ -1,0 +1,58 @@
+#planetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/public/imagenes/fondo2.jpg);
+    color: $color-texto;
+    gap: 3rem;
+    .div-section {
+        display: flex;
+        letter-spacing: 3px;
+        width: 100%;
+        gap: 3rem;
+        position: relative;
+        .div-img {
+            position: fixed;
+            top: 50px;
+            padding-right: 3rem;
+        }
+        .descripcion {
+            align-self: center;
+        }
+        .lista {
+            margin-bottom: 1rem;
+            margin-left: 2rem;
+        }
+        div {
+            width: 50%;
+        }
+        .planetas {
+            cursor: pointer;
+            width: min-content;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    #planetas {
+        .div-section {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 1rem;
+            .relleno {
+                display: none;
+            }
+            .div-img {
+                position: relative;
+                top: 0;
+                padding-right: 0;
+                width: 70%;
+            }
+            .descripcion {
+                width: 100%;
+            }
+        }
+        gap: 1rem;
+    }
+}
