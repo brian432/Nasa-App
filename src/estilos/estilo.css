@@ -282,6 +282,7 @@ nav #hamburguesa .linea3 {
 #Inicio #datos {
   width: 100%;
   height: 100vh;
+  padding: 1rem;
   display: -ms-grid;
   display: grid;
   color: #e2e2e2;
@@ -675,6 +676,9 @@ nav #hamburguesa .linea3 {
         -ms-flex-pack: center;
             justify-content: center;
     max-width: 550px;
+  }
+  #Inicio #datos .titulo {
+    margin-top: 2rem;
   }
   #Inicio #datos .ul {
     display: none;
