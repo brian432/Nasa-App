@@ -210,9 +210,18 @@ $map: (
             max-width: 550px;
             .titulo{
                 margin-top: 2rem;
+                h1{
+                    letter-spacing: 15px;
+                }
             }
             .ul {
                 display: none;
+            }
+            .fadeIn{
+                @include animacion(fadeIn, -100%);
+            }
+            .fadeOut{
+                @include animacion(fadeOut, -100%);
             }
         }
        
