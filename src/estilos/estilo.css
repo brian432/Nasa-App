@@ -674,7 +674,7 @@ nav #hamburguesa .linea3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 320px;
+    max-width: 550px;
   }
   #Inicio #datos .ul {
     display: none;

@@ -206,10 +206,11 @@ $map: (
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 320px;
+            max-width: 550px;
             .ul {
                 display: none;
             }
         }
+       
     }
 }
