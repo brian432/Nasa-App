@@ -15,10 +15,10 @@ function App() {
     <HashRouter>
       <Header setState={setState}/>
       <Routes>
-        <Route path='/Nasa-App/' element={<Inicio setState={setState} />} />
-        <Route path='/Nasa-App/sistema-solar' element={<Planetas state={state} data={data[0].Sistema_Solar} setState={setState} />} /> :
-        <Route path='/Nasa-App/sistema-solar/planetas/:id' element={<Planetas state={state} data={data[0].Sistema_Solar.Planetas[state]} setState={setState} />} />
-        <Route path='/Nasa-App/api-nasa' element={<Nasa />} />
+        <Route path='/' element={<Inicio setState={setState} />} />
+        <Route path='/sistema-solar' element={<Planetas state={state} data={data[0].Sistema_Solar} setState={setState} />} /> :
+        <Route path='/sistema-solar/planetas/:id' element={<Planetas state={state} data={data[0].Sistema_Solar.Planetas[state]} setState={setState} />} />
+        <Route path='/api-nasa' element={<Nasa />} />
         <Route
           path="*" //Si no hay conincidencia, devolvemos lo que hay en la propiedad element.
           element={
