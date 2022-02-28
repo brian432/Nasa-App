@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 import './estilos/estilo.css';
 import Header from './componentes/header';
@@ -12,7 +12,7 @@ function App() {
   const [state, setState] = useState("");
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header setState={setState}/>
       <Routes>
         <Route path='/Nasa-App/' element={<Inicio setState={setState} />} />
@@ -28,7 +28,7 @@ function App() {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
