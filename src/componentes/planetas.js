@@ -8,7 +8,7 @@ const Planetas = ({ state, data, setState }) => {
     useEffect(() => {
         params.id!==undefined&&setState(params.id);
     }, [params.id])
-
+    console.log(state)
     return (
         <div id="planetas" >
             <div className="div-section">
