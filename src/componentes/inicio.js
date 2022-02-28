@@ -1,11 +1,15 @@
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
+import {  useState } from 'react';
 import data from '../data2.json';
 const Inicio = ({ setState }) => {
     const [contador, setContador] = useState(0);
     const [clases, setClases] = useState("");
-    const [boton, setBoton] = useState("Sol")
+    const [boton, setBoton] = useState("Sol");
+
     const planetas = ["Sol", "Mercurio", "Venus", "Tierra", "Marte", "Júpiter", "Saturno", "Urano", "Neptuno"]
     const info = data[0].Sistema_Solar.Planetas[planetas[contador]];
+    
     return (
         <div id="Inicio">
             <div className={contador === 1 ? 'siguiente' : contador === 2 ? 'atras' : contador === 3 ? 'adelante' : 'planetaFuera'}>
@@ -49,7 +53,7 @@ const Inicio = ({ setState }) => {
                     </ul>
                     <div className={clases ? 'info fadeInRight' : 'info fadeOutRight'}>
                         <div className='contenedorButton'>
-                            <button className='hover' onClick={() => setState(boton)}>LEER MÁS</button>
+                            <Link to={`/Nasa-App/sistema-solar/planetas/${boton}`} className='hover button' onClick={()=> setState(boton)}>LEER MÁS</Link>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,11 @@
+import { Link } from "react-router-dom";
+
 import { useState } from "react";
-const Header = ({setState}) => {
+
+const Header = ({ setState }) => {
     const [menu, setMenu] = useState("");
-    const listas = ["Inicio", "Sistema Solar", "Api NASA"];
+
+    const listas = ["inicio", "sistema-solar", "api-nasa"];
     return (
         <nav>
             <div className="logo">
@@ -9,8 +13,8 @@ const Header = ({setState}) => {
             </div>
             <ul className={!menu ? "nav-links" : "nav-links nav-active"}>
                 {listas.map((link, index) =>
-                    <li key={index} style={menu === "" ? {} : { "animation": `navLinkFade 0.5s ease forwards ${index / 7 + .2}s` }} onClick={()=>{setState(link); setMenu(""); window.scroll({top: 0})}}>
-                        <a href={`#${link}`} className="links hover">{link}</a>
+                    <li key={index} style={menu === "" ? {} : { "animation": `navLinkFade 0.5s ease forwards ${index / 7 + .2}s` }} onClick={() => {link==='sistema-solar'&&setState(link); setMenu(""); window.scroll({ top: 0 }) }}>
+                        <Link to={link === 'inicio' ? '/Nasa-App/' : `/Nasa-App/${link}`} className="links hover">{link}</Link>
                     </li>
                 )}
             </ul>

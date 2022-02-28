@@ -288,7 +288,7 @@ nav #hamburguesa .linea3 {
   color: #e2e2e2;
   text-shadow: 2px 2px 2px black;
   letter-spacing: 0px;
-      grid-template-areas: "nada nada nada" "ul titulo info" "ul titulo info";
+      grid-template-areas: "nada nada nada" "ul titulo info" "ul titulo info";
   -ms-grid-columns: 1fr 2fr 1fr;
       grid-template-columns: 1fr 2fr 1fr;
 }
@@ -380,8 +380,7 @@ nav #hamburguesa .linea3 {
           justify-content: center;
 }
 
-#Inicio #datos button {
-  background: none;
+#Inicio #datos .button {
   border: none;
   color: #e2e2e2;
   cursor: pointer;
