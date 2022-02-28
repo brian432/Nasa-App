@@ -4,7 +4,6 @@ import { Params, useParams } from "react-router-dom";
 const Planetas = ({ state, data, setState }) => {
 
     const params = useParams();
-
     useEffect(() => {
         params.id!==undefined&&setState(params.id);
     }, [params.id])

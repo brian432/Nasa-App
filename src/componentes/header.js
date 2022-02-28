@@ -13,7 +13,7 @@ const Header = ({ setState }) => {
             </div>
             <ul className={!menu ? "nav-links" : "nav-links nav-active"}>
                 {listas.map((link, index) =>
-                    <li key={index} style={menu === "" ? {} : { "animation": `navLinkFade 0.5s ease forwards ${index / 7 + .2}s` }} onClick={() => {setState(link); setMenu(""); window.scroll({ top: 0 }) }}>
+                    <li key={index} style={menu === "" ? {} : { "animation": `navLinkFade 0.5s ease forwards ${index / 7 + .2}s` }} onClick={() => {link==='sistema_solar'&& setState(link); setMenu(""); window.scroll({ top: 0 }) }}>
                         <Link to={link === 'inicio' ? '/Nasa-App/' : `/Nasa-App/${link}`} className="links hover">{link}</Link>
                     </li>
                 )}
