@@ -53,7 +53,7 @@ const Inicio = ({ setState }) => {
                     </ul>
                     <div className={clases ? 'info fadeInRight' : 'info fadeOutRight'}>
                         <div className='contenedorButton'>
-                            <Link to={`/sistema-solar/planetas/${boton}`} className='hover button' onClick={()=> setState(boton)}>LEER MÁS</Link>
+                            <Link to={`/Nasa-App/sistema-solar/planetas/${boton}`} className='hover button' onClick={()=> setState(boton)}>LEER MÁS</Link>
                         </div>
                     </div>
                 </div>
