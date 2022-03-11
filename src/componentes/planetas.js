@@ -12,7 +12,7 @@ const Planetas = ({ state, data, setState }) => {
             <div className="div-section">
                 <div className="relleno"></div>
                 <div className="div-img">
-                    <img src={`imagenes/${state}.png`} alt={state} />
+                    <img src='imagenes\Sistema Solar.png' alt={state} />
                 </div>
                 <div className="descripcion">
                     <h2>{state}</h2>
