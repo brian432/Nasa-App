@@ -1,5 +1,12 @@
+import { useParams } from "react-router-dom";
+import { useEffect } from "react";
+
 const Planetas = ({ state, data, setState }) => {
-    console.log(state)
+    const {id}=useParams();
+    console.log(id)
+    useEffect(()=>{
+        setState(id)
+    },[id])
     return (
         <div id="planetas" >
             <div className="div-section">
