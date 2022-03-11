@@ -1,18 +1,11 @@
-import { useEffect } from "react";
-import { Params, useParams } from "react-router-dom";
-
 const Planetas = ({ state, data, setState }) => {
-    /*const params = useParams();
-    useEffect(() => {
-        params.id!==undefined&&setState(params.id);
-    }, [params.id])*/
     console.log(state)
     return (
         <div id="planetas" >
             <div className="div-section">
                 <div className="relleno"></div>
                 <div className="div-img">
-                    <img src='imagenes\Sistema Solar.png' alt={state} />
+                    <img src={`/Nasa-App/imagenes/${state}.png`} alt={state} />
                 </div>
                 <div className="descripcion">
                     <h2>{state}</h2>
