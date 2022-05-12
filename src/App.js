@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import './estilos/estilo.css';
 import Header from './componentes/header';
@@ -13,8 +13,8 @@ function App() {
   const [state, setState] = useState("");
 
   return (
-    <BrowserRouter>
-      <Header setState={setState}/>
+    <>
+      <Header setState={setState} />
       <Routes>
         <Route path='/Nasa-App/' element={<Inicio setState={setState} />} />
         <Route path='/Nasa-App/sistema-solar' element={<SistemaSolar data={data[0].Sistema_Solar} setState={setState} />} /> :
@@ -29,7 +29,7 @@ function App() {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </>
   )
 }
 

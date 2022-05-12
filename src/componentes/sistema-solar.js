@@ -19,7 +19,7 @@ const SistemaSolar = ({ data, setState }) => {
                     <div className="descripcion">
                         <h2>{propiedad}</h2>
                         {propiedad === "Planetas" ?
-                            Object.keys(data.Planetas).map((elemento, indice) => <div key={indice}><p className="lista planetas" onClick={() => { setState(elemento); window.scroll({ top: 0 }) }}>{elemento}</p></div>) :
+                            Object.keys(data.Planetas).map((elemento, indice) => <div key={indice}><p className="lista planetas" >{elemento}</p></div>) :
                             data[propiedad] instanceof Array ?
                                 data[propiedad].map((elemento, indice) => <p key={indice} className="lista" >{elemento}</p>) :
                                 typeof data[propiedad] === "object" ?

@@ -811,7 +811,6 @@ nav #hamburguesa .linea3 {
 }
 
 #planetas .div-section .planetas {
-  cursor: pointer;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
