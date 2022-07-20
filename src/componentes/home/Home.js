@@ -51,7 +51,7 @@ export const Home = ({ setState }) => {
                     </ul>
                     <div className={clases ? 'info fadeInRight' : 'info fadeOutRight'}>
                         <div className='contenedorButton'>
-                            <Link to={`/Nasa-App/planetas/${boton}`} className='hover button' onClick={()=> setState(boton)}>LEER MÁS</Link>
+                            <Link to={`/planetas/${boton}`} className='hover button' onClick={()=> setState(boton)}>LEER MÁS</Link>
                         </div>
                     </div>
                 </div>
