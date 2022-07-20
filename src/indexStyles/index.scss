@@ -1,25 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap");
+
+
 $color-texto: rgb(226, 226, 226);
+
 @mixin width-height {
     min-height: 100vh;
     min-width: 320px;
     max-width: 1920px;
     margin: 0 auto;
 }
-@import './header';
-@import './inicio';
-@import './planetas';
-@import './api-nasa';
+
+@import "../componentes/header/header"; //Para que los demas archivos accedan a las variables globales, debemos importart los archivos scss luego de las variables globales
+@import "../componentes/home/home";
+@import "../componentes/planetas/planetas";
+@import "../componentes/Api-nasa/api-nasa";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
-    background-color: #fff
+html {
+    background-color: #fff;
 }
-body{
+body {
     @include width-height;
     font-family: "Orbitron", sans-serif;
     background-image: url(/public/imagenes/fondo1.jpg);
@@ -30,24 +35,24 @@ body{
 
 /*clases globales*/
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     width: 10px;
     background: rgb(3, 29, 54);
 }
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.247);
-    border-radius:10px;
-    border-right:2px solid rgb(3, 29, 54);
+    border-radius: 10px;
+    border-right: 2px solid rgb(3, 29, 54);
 }
 
 body,
 #root,
 .App {
     min-height: 100vh;
-    max-width: 1920px!important;
+    max-width: 1920px !important;
 }
 
-.overflow{
+.overflow {
     overflow: hidden;
 }
 
@@ -125,10 +130,9 @@ p {
     justify-content: center;
 }
 
-
 @media screen and (max-width: 1000px) {
     #planetas,
-    #Nasa{
+    #Nasa {
         padding: 100px 2.5rem 0 2.5rem;
     }
 }
@@ -139,8 +143,3 @@ p {
         padding: 100px 1.5rem 0 1.5rem;
     }
 }
-
-
-
-
-

@@ -175,7 +175,7 @@ nav #hamburguesa .linea3 {
   }
 }
 
-#Inicio {
+#home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,12 +194,12 @@ nav #hamburguesa .linea3 {
   position: relative;
 }
 
-#Inicio img {
+#home img {
   width: 100%;
   height: 100%;
 }
 
-#Inicio .planetaFuera {
+#home .planetaFuera {
   display: block;
   position: absolute;
   width: 100px;
@@ -207,7 +207,7 @@ nav #hamburguesa .linea3 {
   top: -100px;
 }
 
-#Inicio .siguiente {
+#home .siguiente {
   display: block;
   position: absolute;
   width: 100px;
@@ -221,8 +221,8 @@ nav #hamburguesa .linea3 {
   cursor: pointer;
 }
 
-#Inicio .atras,
-#Inicio .atras2 {
+#home .atras,
+#home .atras2 {
   display: block;
   width: 200px;
   height: 200px;
@@ -234,12 +234,12 @@ nav #hamburguesa .linea3 {
   transition: ease-in-out 1s;
 }
 
-#Inicio .atras2 {
+#home .atras2 {
   -webkit-transform: translateY(70vh) scale(5, 5);
           transform: translateY(70vh) scale(5, 5);
 }
 
-#Inicio .adelante {
+#home .adelante {
   display: block;
   width: 1000px;
   height: 1000px;
@@ -275,11 +275,11 @@ nav #hamburguesa .linea3 {
   }
 }
 
-#Inicio .none {
+#home .none {
   display: none !important;
 }
 
-#Inicio #datos {
+#home #datos {
   width: 100%;
   height: 100vh;
   padding: 1rem;
@@ -293,23 +293,23 @@ nav #hamburguesa .linea3 {
       grid-template-columns: 1fr 2fr 1fr;
 }
 
-#Inicio #datos h1 {
+#home #datos h1 {
   font-size: clamp(2rem, 5vw, 5rem);
 }
 
-#Inicio #datos h3 {
+#home #datos h3 {
   font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
-#Inicio #datos p {
+#home #datos p {
   font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
-#Inicio #datos li {
+#home #datos li {
   font-size: clamp(0.8rem, 1.2vw, 1.2rem);
 }
 
-#Inicio #datos .titulo {
+#home #datos .titulo {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
@@ -332,13 +332,13 @@ nav #hamburguesa .linea3 {
   margin-bottom: 4rem;
 }
 
-#Inicio #datos .titulo h1 {
+#home #datos .titulo h1 {
   letter-spacing: 20px;
   text-indent: 20px;
   z-index: 11;
 }
 
-#Inicio #datos .ul {
+#home #datos .ul {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -357,7 +357,7 @@ nav #hamburguesa .linea3 {
           justify-content: center;
 }
 
-#Inicio #datos .info {
+#home #datos .info {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
@@ -380,7 +380,7 @@ nav #hamburguesa .linea3 {
           justify-content: center;
 }
 
-#Inicio #datos .button {
+#home #datos .button {
   border: none;
   color: #e2e2e2;
   cursor: pointer;
@@ -639,22 +639,22 @@ nav #hamburguesa .linea3 {
 }
 
 @media screen and (max-width: 1000px) {
-  #Inicio .siguiente {
+  #home .siguiente {
     width: 15vw;
     height: 15vw;
     top: -50px;
     -webkit-transform: translateY(80px) scale(2, 2);
             transform: translateY(80px) scale(2, 2);
   }
-  #Inicio .atras,
-  #Inicio .atras2 {
+  #home .atras,
+  #home .atras2 {
     width: 33vw;
     height: 33vw;
     top: 0;
     -webkit-transform: translateY(100vh) scale(3, 3);
             transform: translateY(100vh) scale(3, 3);
   }
-  #Inicio .adelante {
+  #home .adelante {
     width: 100vw;
     height: 100vw;
     position: absolute;
@@ -663,7 +663,7 @@ nav #hamburguesa .linea3 {
 }
 
 @media screen and (max-width: 768px) {
-  #Inicio #datos {
+  #home #datos {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -676,16 +676,16 @@ nav #hamburguesa .linea3 {
             justify-content: center;
     max-width: 550px;
   }
-  #Inicio #datos .titulo {
+  #home #datos .titulo {
     margin-top: 2rem;
   }
-  #Inicio #datos .titulo h1 {
+  #home #datos .titulo h1 {
     letter-spacing: 15px;
   }
-  #Inicio #datos .ul {
+  #home #datos .ul {
     display: none;
   }
-  #Inicio #datos .fadeIn {
+  #home #datos .fadeIn {
     -webkit-animation-name: fadeIn;
             animation-name: fadeIn;
     -webkit-animation-fill-mode: forwards;
@@ -723,7 +723,7 @@ nav #hamburguesa .linea3 {
               transform: none;
     }
   }
-  #Inicio #datos .fadeOut {
+  #home #datos .fadeOut {
     -webkit-animation-name: fadeOut;
             animation-name: fadeOut;
     -webkit-animation-fill-mode: forwards;
@@ -1190,4 +1190,4 @@ p {
     padding: 100px 1.5rem 0 1.5rem;
   }
 }
-/*# sourceMappingURL=estilo.css.map */
+/*# sourceMappingURL=index.css.map */

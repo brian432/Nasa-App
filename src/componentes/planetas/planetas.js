@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
-
 const Planetas = ({ state, data, setState }) => {
     const {id}=useParams();
     console.log(id)

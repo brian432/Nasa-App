@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import data from '../data.json'
+import data from '../../data.json'
 
 //Apis
 const ApiKey = "DaFi4M1aSffvFg0EGzfCxWruc6FyhR7wStWMPtxf";

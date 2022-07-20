@@ -1,4 +1,4 @@
-#Inicio {
+#home {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,7 +177,7 @@ $map: (
 }
 
 @media screen and (max-width: 1000px) {
-    #Inicio {
+    #home {
         .siguiente {
             width: 15vw;
             height: 15vw;
@@ -201,7 +201,7 @@ $map: (
 }
 
 @media screen and (max-width: 768px) {
-    #Inicio {
+    #home {
         #datos {
             display: flex;
             flex-direction: column;

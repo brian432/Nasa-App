@@ -1,17 +1,16 @@
 import { Link } from 'react-router-dom';
-
 import {  useState } from 'react';
-import data from '../data2.json';
-const Inicio = ({ setState }) => {
+import data from '../../data2.json';
+export const Home = ({ setState }) => {
     const [contador, setContador] = useState(0);
     const [clases, setClases] = useState("");
     const [boton, setBoton] = useState("Sol");
-
+    console.log(data);
     const planetas = ["Sol", "Mercurio", "Venus", "Tierra", "Marte", "Júpiter", "Saturno", "Urano", "Neptuno"]
     const info = data[0].Sistema_Solar.Planetas[planetas[contador]];
     
     return (
-        <div id="Inicio">
+        <div id="home">
             <div className={contador === 1 ? 'siguiente' : contador === 2 ? 'atras' : contador === 3 ? 'adelante' : 'planetaFuera'}>
                 <img src="imagenes/Venus.png" alt="" onClick={() => { setContador(2); setClases(""); setBoton("Venus") }} />
             </div>
@@ -46,7 +45,7 @@ const Inicio = ({ setState }) => {
                         <p className="descripcion">{info.Intro}</p>
                     </div>
                     <ul className={clases ? 'ul fadeInLeft' : 'ul fadeOutLeft'}>
-                        <h3>{info.Satélites.length > 0 && 'Satélites'}</h3>
+                        <h3>{info?.Satélites?.length > 0 && 'Satélites'}</h3>
                         {info.Satélites.length > 0 && info.Satélites.map((elemento, indice) =>
                             <li key={indice}>{elemento}</li>
                         )}
@@ -61,5 +60,3 @@ const Inicio = ({ setState }) => {
         </div>
     )
 }
-
-export default Inicio;
