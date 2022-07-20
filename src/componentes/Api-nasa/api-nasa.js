@@ -107,12 +107,12 @@ const Nasa = () => {
                     </div>
                     <h1 className="titulos">Tipos de camaras</h1>
                     <div className="camarasDescripcion margin">
-                        {Object.keys(data[1].apiMarte).map((propiedad, indice) =>
+                        {Object.keys(data[1].apimarte).map((propiedad, indice) =>
                             <div id={propiedad} key={indice} className="margin camaras">
                                 <h4>{propiedad}</h4>
-                                {data[1].apiMarte[propiedad] instanceof Array ?
-                                    data[1].apiMarte[propiedad].map((elemento, indice) => <p key={indice}>{elemento}</p>) :
-                                    <p>{data[1].apiMarte[propiedad]}</p>}
+                                {data[1].apimarte[propiedad] instanceof Array ?
+                                    data[1].apimarte[propiedad].map((elemento, indice) => <p key={indice}>{elemento}</p>) :
+                                    <p>{data[1].apimarte[propiedad]}</p>}
                             </div>
                         )}
                     </div>

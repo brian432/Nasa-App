@@ -10,6 +10,7 @@ $color-texto: rgb(226, 226, 226);
     margin: 0 auto;
 }
 
+
 @import "../componentes/header/header"; //Para que los demas archivos accedan a las variables globales, debemos importart los archivos scss luego de las variables globales
 @import "../componentes/home/home";
 @import "../componentes/planetas/planetas";

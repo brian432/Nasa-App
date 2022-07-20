@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom';
 import {  useState } from 'react';
-import data from '../../data2.json';
+import data from '../../data.json';
 export const Home = ({ setState }) => {
     const [contador, setContador] = useState(0);
     const [clases, setClases] = useState("");
     const [boton, setBoton] = useState("Sol");
-    console.log(data);
     const planetas = ["Sol", "Mercurio", "Venus", "Tierra", "Marte", "Júpiter", "Saturno", "Urano", "Neptuno"]
     const info = data[0].Sistema_Solar.Planetas[planetas[contador]];
     
@@ -45,7 +44,7 @@ export const Home = ({ setState }) => {
                         <p className="descripcion">{info.Intro}</p>
                     </div>
                     <ul className={clases ? 'ul fadeInLeft' : 'ul fadeOutLeft'}>
-                        <h3>{info?.Satélites?.length > 0 && 'Satélites'}</h3>
+                        <h3>{info.Satélites.length > 0 && 'Satélites'}</h3>
                         {info.Satélites.length > 0 && info.Satélites.map((elemento, indice) =>
                             <li key={indice}>{elemento}</li>
                         )}

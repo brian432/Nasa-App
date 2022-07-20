@@ -307,6 +307,7 @@ nav #hamburguesa .linea3 {
 
 #home #datos li {
   font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+  list-style: none;
 }
 
 #home #datos .titulo {

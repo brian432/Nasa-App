@@ -92,6 +92,7 @@
         }
         li {
             font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+            list-style: none;
         }
         .titulo {
             grid-area: titulo;

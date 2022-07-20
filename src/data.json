@@ -13,6 +13,7 @@
             },
             "Planetas": {
                 "Sol": {
+                    "Intro":"Es una estrella de tipo-G de la secuencia principal y clase de luminosidad V que se encuentra en el centro del sistema solar y constituye la mayor fuente de radiación electromagnética de este sistema planetario.",
                     "descripcion": "Es una estrella de tipo-G de la secuencia principal y clase de luminosidad V que se encuentra en el centro del sistema solar y constituye la mayor fuente de radiación electromagnética de este sistema planetario. Es una esfera casi perfecta de plasma, con un movimiento convectivo interno que genera un campo magnético a través de un proceso de dinamo. Cerca de tres cuartas partes de la masa del Sol constan de hidrógeno; el resto es principalmente helio, con cantidades mucho más pequeñas de elementos, incluyendo el oxígeno, carbono, neón y hierro.",
                     "Edad": "Se formó hace aproximadamente 4600 millones de años a partir del colapso gravitacional de la materia dentro de una región de una gran nube molecular.",
                     "Características": [
@@ -47,9 +48,11 @@
                         "Eyección de masa coronal": "La eyección de masa coronal (CME) es una onda hecha de radiación y viento solar que se desprende del Sol en el periodo llamado Actividad Máxima Solar. Esta onda es muy peligrosa ya que daña los circuitos eléctricos, los transformadores y los sistemas de comunicación. Cuando esto ocurre, se dice que hay una tormenta solar.",
                         "Cambio de polaridad solar": "La rotación solar produce que las capas más externas no giren todas a la misma velocidad, por lo que el ordenamiento de estas líneas de fuerza se va descompensando a medida que los materiales distribuidos entre los polos y el ecuador van perdiendo sincronismo en el giro rotacional de la estrella.",
                         "Nacimiento y muerte del Sol": "El Sol se formó hace 4650 millones de años y tiene combustible para 7500 millones de años más.31​nota 1​ Después, comenzará a hacerse más y más grande, hasta convertirse en una gigante roja. Finalmente, se hundirá por su propio peso y se convertirá en una enana blanca, que puede tardar unos mil millones de años en enfriarse."
-                    }
+                    },
+                    "Satélites": []
                 },
                 "Mercurio": {
+                    "Intro":"Mercurio es el planeta del sistema solar más cercano al Sol y el más pequeño. Forma parte de los denominados planetas interiores y carece de satélites naturales al igual que Venus.",
                     "descripcion": "Mercurio es el planeta del sistema solar más cercano al Sol y el más pequeño. Forma parte de los denominados planetas interiores y carece de satélites naturales al igual que Venus.",
                     "Características": [
                         "La astronave de la Agencia Europea del Espacio (ESA) denominada BepiColombo, lanzada en octubre de 2018, se halla en vuelo rumbo a Mercurio a donde llegará en 2025 y se espera que aporte nuevos conocimientos sobre el origen y composición del planeta, así como de su geología y campo magnético."
@@ -76,14 +79,16 @@
                         "Órbita": "La órbita de Mercurio es la más excéntrica entre todos los planetas que orbitan el Sol. La distancia de Mercurio al Sol varía en un rango entre 46 y 70 millones de kilómetros. Tarda 88 días terrestres en dar una traslación completa. La inclinación de su plano orbital con respecto al plano de la eclíptica es de 7°.",
                         "Amanecer doble": "En Mercurio existe el fenómeno de los amaneceres dobles, cuando el Sol sale aproximadamente dos tercios de su tamaño, se detiene, se esconde nuevamente casi exactamente por donde salió y luego vuelve a salir para continuar su recorrido por el cielo; esto solo ocurre en algunos puntos de la superficie, a 180º de longitud de estos lo que se observa es un doble anochecer.",
                         "Resonancia orbital": "Durante muchos años se pensó que la misma cara de Mercurio miraba siempre hacia el Sol, de forma sincrónica, similar a como lo hace la Luna respecto a la Tierra. No fue hasta 1965 cuando observaciones por radio (ver Observación con Grandes Telescopios) descubrieron una resonancia orbital de 2:3, rotando tres veces cada dos años mercurianos; la excentricidad de la órbita de Mercurio hace esta resonancia estable en el perihelio, cuando la marea solar es más fuerte, el Sol está todavía en el cielo de Mercurio."
-                    }
+                    },
+                    "Satélites": []
                 },
                 "Venus": {
+                    "Intro":"Venus es el segundo planeta del sistema solar en orden de proximidad al Sol y el tercero en cuanto a tamaño en orden ascendente después de Mercurio y Marte.",
                     "descripcion": "Venus es el segundo planeta del sistema solar en orden de proximidad al Sol y el tercero en cuanto a tamaño en orden ascendente después de Mercurio y Marte. Al igual que Mercurio, carece de satélites naturales. Recibe su nombre en honor a Venus, la diosa romana del amor (gr. Afrodita).",
                     "Características": [
                         "Aunque todas las órbitas planetarias son elípticas, la órbita de Venus es la más parecida a una circunferencia, con una excentricidad inferior a un 1,2%.",
                         "Venus gira sobre sí mismo muy lentamente en un movimiento retrógrado, en el mismo sentido de las manecillas del reloj si se toma como referencia el polo norte, de este a oeste en lugar de oeste a este como el resto de los planetas (excepto Urano, que está muy inclinado), tardando en hacer un giro completo sobre sí mismo 243,187 días terrestres.",
-                        "Venus tiene una densa atmósfera, compuesta en su mayor parte por dióxido de carbono y una pequeña cantidad de nitrógeno.11​ La presión a nivel de la superficie es noventa veces superior a la presión atmosférica en la superficie terrestre.  La enorme cantidad de dióxido de carbono de la atmósfera provoca un fuerte efecto invernadero que eleva la temperatura de la superficie del planeta hasta cerca de 464 °C en las regiones menos elevadas cerca del ecuador. Esto hace que Venus sea más caliente que Mercurio, a pesar de hallarse a más del doble de la distancia del Sol que este y de recibir solo el 25% de su radiación solar",
+                        "Venus tiene una densa atmósfera, compuesta en su mayor parte por dióxido de carbono y una pequeña cantidad de nitrógeno. La presión a nivel de la superficie es noventa veces superior a la presión atmosférica en la superficie terrestre.  La enorme cantidad de dióxido de carbono de la atmósfera provoca un fuerte efecto invernadero que eleva la temperatura de la superficie del planeta hasta cerca de 464 °C en las regiones menos elevadas cerca del ecuador. Esto hace que Venus sea más caliente que Mercurio, a pesar de hallarse a más del doble de la distancia del Sol que este y de recibir solo el 25% de su radiación solar",
                         "Venus tiene una lenta rotación retrógrada, lo que significa que gira de este a oeste, en lugar de hacerlo de oeste a este como lo hacen la mayoría de los demás planetas mayores"
                     ],
                     "Composición": {
@@ -101,9 +106,11 @@
                     },
                     "Estructura": {
                         "Núcleo": "Sin información sísmica o detalles, momento de inercia, existen pocos datos directos sobre la geoquímica y la Estructura interna de Venus. Al igual que la Tierra, se especula que el núcleo de Venus es al menos parcialmente líquido."
-                    }
+                    },
+                    "Satélites": []
                 },
                 "Tierra": {
+                    "Intro":"La Tierra (del latín Terra, deidad romana equivalente a Gea, diosa griega de la feminidad y la fecundidad) es un planeta del sistema solar que gira alrededor de su estrella —el Sol— en la tercera órbita más interna.",
                     "descripcion": "La Tierra (del latín Terra, deidad romana equivalente a Gea, diosa griega de la feminidad y la fecundidad) es un planeta del sistema solar que gira alrededor de su estrella —el Sol— en la tercera órbita más interna. Es el más denso y el quinto mayor de los ocho planetas del sistema solar. También es el mayor de los cuatro terrestres o rocosos.",
                     "Edad": "La Tierra se formó hace aproximadamente 4550 millones de años y la vida surgió unos mil millones de años después.",
                     "Características": [
@@ -144,12 +151,13 @@
                     ]
                 },
                 "Marte": {
+                    "Intro":"Marte es el cuarto planeta en orden de distancia al Sol y el segundo más pequeño del sistema solar. Es conocido como «el planeta rojo» debido a la apariencia rojiza que le confiere el óxido de hierro predominante en su superficie.",
                     "descripcion": "Marte es el cuarto planeta en orden de distancia al Sol y el segundo más pequeño del sistema solar, después de Mercurio. Recibió su nombre en homenaje al dios de la guerra de la mitología romana (Ares en la mitología griega), y también es conocido como «el planeta rojo» debido a la apariencia rojiza que le confiere el óxido de hierro predominante en su superficie.",
                     "Características": [
                         "Marte es ligeramente elipsoidal, con un diámetro ecuatorial de 6794,4 km y polar de 6752,4 km (aproximadamente la mitad que la Tierra)",
                         "Medidas micrométricas muy precisas han mostrado un achatamiento tres veces mayor que el de la Tierra, con un valor de 0,01.",
                         "La densidad de Marte es menor a la de la Tierra y su gravEdad un 38% de la gravEdad terrestre.",
-                        "La apariencia rojo-anaranjada de su superficie se debe al óxido de hierro III o herrumbre.27​ Puede parecer color tofe, y también de otros colores como dorado, marrón, beige o verdoso, dependiendo de los minerales presentes en su superficie."
+                        "La apariencia rojo-anaranjada de su superficie se debe al óxido de hierro III o herrumbre. Puede parecer color tofe, y también de otros colores como dorado, marrón, beige o verdoso, dependiendo de los minerales presentes en su superficie."
                     ],
                     "Composición": {
                         "CO2": "95,32%",
@@ -179,7 +187,8 @@
                     ]
                 },
                 "Júpiter": {
-                    "descripcion": "Júpiter es el planeta más grande del sistema solar y el quinto en orden de lejanía al Sol.3​ Es un gigante gaseoso que forma parte de los denominados planetas exteriores. Recibe su nombre del dios romano Júpiter (Zeus en la mitología griega). Es uno de los objetos naturales más brillantes en un cielo nocturno despejado, superado solo por la Luna, Venus y algunas veces Marte.",
+                    "Intro":"Júpiter es el planeta más grande del sistema solar y el quinto en orden de lejanía al Sol. Es un gigante gaseoso que forma parte de los denominados planetas exteriores",
+                    "descripcion": "Júpiter es el planeta más grande del sistema solar y el quinto en orden de lejanía al Sol. Es un gigante gaseoso que forma parte de los denominados planetas exteriores. Recibe su nombre del dios romano Júpiter (Zeus en la mitología griega). Es uno de los objetos naturales más brillantes en un cielo nocturno despejado, superado solo por la Luna, Venus y algunas veces Marte.",
                     "Características": [
                         "Júpiter es el planeta con mayor masa del sistema solar: equivale a unas 2,48 veces la suma de las masas de todos los demás planetas juntos.",
                         "Júpiter también posee la velocidad de rotación más rápida de los planetas del sistema solar: gira en poco menos de diez horas sobre su eje.",
@@ -206,9 +215,10 @@
                         "Ganímedes",
                         "Calisto"
                     ],
-                    "Sistema de anillos": "Júpiter posee un tenue sistema de anillos que fue descubierto por la sonda Voyager 1 en marzo de 1979.33​34​ El anillo principal tiene unos 6400 km de anchura, orbita el planeta a 122 800 km de distancia del centro y tiene un espesor vertical inferior a la decena de kilómetros. Su espesor óptico es tan reducido que solamente ha podido ser observado por las sondas espaciales Voyager 1 y 2 y Galileo."
+                    "Sistema de anillos": "Júpiter posee un tenue sistema de anillos que fue descubierto por la sonda Voyager 1 en marzo de 1979. El anillo principal tiene unos 6400 km de anchura, orbita el planeta a 122 800 km de distancia del centro y tiene un espesor vertical inferior a la decena de kilómetros. Su espesor óptico es tan reducido que solamente ha podido ser observado por las sondas espaciales Voyager 1 y 2 y Galileo."
                 },
                 "Saturno": {
+                    "Intro":"Saturno es el sexto planeta del sistema solar contando desde el Sol, el segundo en tamaño y masa después de Júpiter y el único con un sistema de anillos visible desde la Tierra.",
                     "descripcion": "Saturno es el sexto planeta del sistema solar contando desde el Sol, el segundo en tamaño y masa después de Júpiter y el único con un sistema de anillos visible desde la Tierra. Su nombre proviene del dios romano Saturno. Forma parte de los denominados planetas exteriores o gaseosos. El aspecto más característico de Saturno son sus brillantes y grandes anillos.",
                     "Características": [
                         "Saturno es un planeta visiblemente achatado en los polos con un ecuador que sobresale formando un esferoide ovalado.",
@@ -240,6 +250,7 @@
                     "Sistema de anillos": "Los anillos de Saturno se extienden en el plano ecuatorial del planeta desde los 6630 km a los 120.700 km por encima del ecuador de Saturno y están compuestos de partículas con abundante agua helada. El tamaño de cada una de las partículas varía desde partículas microscópicas de polvo hasta rocas de unos pocos metros de tamaño."
                 },
                 "Urano": {
+                    "Intro":"Urano es el séptimo planeta del sistema solar, el tercero de mayor tamaño, y el cuarto más masivo. Se llama así en honor de la divinidad griega del cielo Urano (del griego antiguo Οὐρανός), el padre de Crono (Saturno) y el abuelo de Zeus (Júpiter).",
                     "descripcion": "Urano es el séptimo planeta del sistema solar, el tercero de mayor tamaño, y el cuarto más masivo. Se llama así en honor de la divinidad griega del cielo Urano (del griego antiguo Οὐρανός), el padre de Crono (Saturno) y el abuelo de Zeus (Júpiter).",
                     "Características": [
                         "La masa de Urano es 14,5 veces la de la Tierra haciéndolo el menos masivo de los planetas gigantes, mientras que su densidad, 1,27 g/cm³, lo hace el segundo menos denso entre ellos, por detrás de Saturno.",
@@ -271,6 +282,7 @@
                     "Sistema de anillos": "El sistema anular de Urano fue el segundo en ser descubierto en el sistema solar tras el de Saturno.78​ Las partículas que componen los anillos son muy oscuras, y tienen tamaños desde micrómetros hasta fracciones de metro.14​ Actualmente se conocen 13 anillos, de los cuales el más brillante es el anillo ε. Todos los anillos (menos dos) son extremadamente estrechos, teniendo algunos anillos tan solo unos cuantos kilómetros de anchura."
                 },
                 "Neptuno": {
+                    "Intro":"Neptuno es el octavo planeta en distancia respecto al Sol y el más lejano del sistema solar. Forma parte de los denominados planetas exteriores, y dentro de estos, es uno de los gigantes helados.",
                     "descripcion": "Neptuno es el octavo planeta en distancia respecto al Sol y el más lejano del sistema solar. Forma parte de los denominados planetas exteriores, y dentro de estos, es uno de los gigantes helados, y es el primero que fue descubierto gracias a predicciones matemáticas. Su nombre fue puesto en honor al dios romano del mar —Neptuno—, y es el cuarto planeta en diámetro y el tercero más grande en masa.",
                     "Características": [
                         "Neptuno es un planeta dinámico, con manchas que recuerdan las tempestades de Júpiter. La más grande, la Gran Mancha Oscura, tenía un tamaño similar al de la Tierra, pero en 1994 desapareció y se ha formado otra.",
@@ -338,17 +350,17 @@
         }
     },
     {
-        "apiTierra": "Imágenes diarias recopiladas por el instrumento Earth Polychromatic Imaging Camera (EPIC) de DSCOVR. Posicionado de forma única en el punto de Lagrange Tierra-Sol, EPIC proporciona imágenes de disco completo de la Tierra y captura perspectivas únicas de ciertos eventos astronómicos, como los tránsitos lunares, utilizando un detector CCD (Dispositivo de Carga Acoplada) de 2048x2048 píxeles acoplado a un telescopio Cassegrain de apertura de 30 cm.",
-        "apiMarte": {
+        "apimarte": {
             "HAZCAMS": [
                 "FHAZ: Camara delantera",
                 "RHAZ: Camara trasera",
                 "En el MSL se utilizan cuatro pares de cámaras de navegación en blanco y negro situadas en la parte delantera, izquierda, derecha y trasera del vehículo. Las cámaras de evasión de riesgos (también llamado Hazcams) se utilizan para la prevención de riesgos en las unidades del rover y para la colocación segura del brazo robótico en las rocas y en los suelos. Las cámaras se utilizan para captar la luz visible en tres dimensiones (3-D) de las imágenes. Las cámaras tienen unos 120 grados de campo de visión y un mapa del terreno de hasta 3 metros en frente del vehículo. Estas imágenes de salvaguarda sirven para que el vehículo no choque inadvertidamente contra obstáculos inesperados, y trabaja en conjunto con el software que permite que el rover se desplace con seguridad."
             ],
-            "MAST": "El sistema MastCam proporciona múltiples espectros e imágenes en color verdadero con dos cámaras. Las cámaras pueden tomar imágenes en color real a 1600x1200 píxeles y hasta 10 fotogramas por segundo de vídeo comprimido por hardware a 720p (1280x720).",
-            "CHEMCAM": "ChemCam es un conjunto de dos instrumentos de teledetección combinados como uno solo: una espectroscopia de ruptura inducida por láser (LIBS) y un telescopio Remote Micro Imager (RMI). El conjunto de instrumentos ChemCam fue desarrollado por el laboratorio francés CESR y el Laboratorio Nacional de Los Álamos. El modelo de vuelo de la unidad de mástil fue entregado desde el CNES francés al Laboratorio Nacional de Los Álamos. El propósito del instrumento LIBS es proporcionar composiciones elementales de roca y suelo, mientras que el RMI proporciona a los científicos de ChemCam imágenes de alta resolución de las áreas de muestreo de las rocas y el suelo a las que se dirige LIBS. El instrumento LIBS puede apuntar a una muestra de roca o suelo a una distancia de hasta 7 m (23 pies), vaporizando una pequeña cantidad de ella con aproximadamente 50 a 75 pulsos de 5 nanosegundos de un láser infrarrojo de 1067 nm y luego observa el espectro de la luz emitida por la roca vaporizada.",
-            "MAHLI": "MAHLI es una cámara en el brazo robótico del rover, y adquiere imágenes microscópicas de roca y suelo. MAHLI puede tomar imágenes en color verdadero a 1600x1200 píxeles con una resolución de hasta 14,5 μm por píxel. MAHLI tiene una distancia focal de 18,3 a 21,3 mm (0,72 a 0,84 pulgadas) y un campo de visión de 33,8 a 38,5°. MAHLI tiene iluminación de diodos emisores de luz (LED) blancos y ultravioleta para obtener imágenes en la oscuridad o imágenes de fluorescencia. MAHLI también tiene enfoque mecánico en un rango de distancias infinitas a milimétricas. Este sistema puede crear algunas imágenes con procesamiento de apilamiento de enfoque. MAHLI puede almacenar las imágenes sin procesar o realizar una compresión predictiva o JPEG sin pérdidas en tiempo real. El objetivo de calibración para MAHLI incluye referencias de color, un gráfico de barra métrica, un centavo Lincoln VDB de 1909 y un patrón de escalera para la calibración de profundidad.",
-            "NAVCAM": "El rover tiene dos pares de cámaras de navegación en blanco y negro montadas en el mástil para apoyar la navegación terrestre. Las cámaras tienen un ángulo de visión de 45° y utilizan luz visible para capturar imágenes estereoscópicas en 3D."
+            "MAST":"El sistema MastCam proporciona múltiples espectros e imágenes en color verdadero con dos cámaras. Las cámaras pueden tomar imágenes en color real a 1600x1200 píxeles y hasta 10 fotogramas por segundo de vídeo comprimido por hardware a 720p (1280x720).",
+            "CHEMCAM":"ChemCam es un conjunto de dos instrumentos de teledetección combinados como uno solo: una espectroscopia de ruptura inducida por láser (LIBS) y un telescopio Remote Micro Imager (RMI). El conjunto de instrumentos ChemCam fue desarrollado por el laboratorio francés CESR y el Laboratorio Nacional de Los Álamos. El modelo de vuelo de la unidad de mástil fue entregado desde el CNES francés al Laboratorio Nacional de Los Álamos. El propósito del instrumento LIBS es proporcionar composiciones elementales de roca y suelo, mientras que el RMI proporciona a los científicos de ChemCam imágenes de alta resolución de las áreas de muestreo de las rocas y el suelo a las que se dirige LIBS. El instrumento LIBS puede apuntar a una muestra de roca o suelo a una distancia de hasta 7 m (23 pies), vaporizando una pequeña cantidad de ella con aproximadamente 50 a 75 pulsos de 5 nanosegundos de un láser infrarrojo de 1067 nm y luego observa el espectro de la luz emitida por la roca vaporizada.",
+            "MAHLI":"MAHLI es una cámara en el brazo robótico del rover, y adquiere imágenes microscópicas de roca y suelo. MAHLI puede tomar imágenes en color verdadero a 1600x1200 píxeles con una resolución de hasta 14,5 μm por píxel. MAHLI tiene una distancia focal de 18,3 a 21,3 mm (0,72 a 0,84 pulgadas) y un campo de visión de 33,8 a 38,5°. MAHLI tiene iluminación de diodos emisores de luz (LED) blancos y ultravioleta para obtener imágenes en la oscuridad o imágenes de fluorescencia. MAHLI también tiene enfoque mecánico en un rango de distancias infinitas a milimétricas. Este sistema puede crear algunas imágenes con procesamiento de apilamiento de enfoque. MAHLI puede almacenar las imágenes sin procesar o realizar una compresión predictiva o JPEG sin pérdidas en tiempo real. El objetivo de calibración para MAHLI incluye referencias de color, un gráfico de barra métrica, un centavo Lincoln VDB de 1909 y un patrón de escalera para la calibración de profundidad.",
+            "NAVCAM":"El rover tiene dos pares de cámaras de navegación en blanco y negro montadas en el mástil para apoyar la navegación terrestre. Las cámaras tienen un ángulo de visión de 45° y utilizan luz visible para capturar imágenes estereoscópicas en 3D."
         }
+        
     }
 ]
