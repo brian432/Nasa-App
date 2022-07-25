@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Nasa-App/static/css/main.b89c5ea9.css",
-    "main.js": "/Nasa-App/static/js/main.c24b12b8.js",
+    "main.css": "/Nasa-App/static/css/main.780ee80f.css",
+    "main.js": "/Nasa-App/static/js/main.ada44132.js",
     "static/media/fondo1.jpg": "/Nasa-App/static/media/fondo1.540c51db7c406dfb760f.jpg",
     "static/media/fondo2.jpg": "/Nasa-App/static/media/fondo2.c8c5177a8c5b69b94351.jpg",
     "static/media/fondo3.jpg": "/Nasa-App/static/media/fondo3.468b922c69bf5499b4bc.jpg",
     "index.html": "/Nasa-App/index.html",
-    "main.b89c5ea9.css.map": "/Nasa-App/static/css/main.b89c5ea9.css.map",
-    "main.c24b12b8.js.map": "/Nasa-App/static/js/main.c24b12b8.js.map"
+    "main.780ee80f.css.map": "/Nasa-App/static/css/main.780ee80f.css.map",
+    "main.ada44132.js.map": "/Nasa-App/static/js/main.ada44132.js.map"
   },
   "entrypoints": [
-    "static/css/main.b89c5ea9.css",
-    "static/js/main.c24b12b8.js"
+    "static/css/main.780ee80f.css",
+    "static/js/main.ada44132.js"
   ]
 }
