@@ -1,0 +1,31 @@
+#TierraApi {
+    text-align: center;
+    .div-img {
+        max-width: 600px;
+        margin: 0 auto;
+        position: relative;
+        #siguiente {
+            position: absolute;
+            top: 45%;
+            right: 0;
+        }
+        #anterior {
+            position: absolute;
+            top: 45%;
+            left: 0;
+        }
+        #fecha {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+        button {
+            background: none;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: clamp(1.5rem, 4vw, 4rem);
+            padding: 5px;
+        }
+    }
+}

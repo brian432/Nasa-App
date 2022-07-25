@@ -9,12 +9,10 @@ $color-texto: rgb(226, 226, 226);
     max-width: 1920px;
     margin: 0 auto;
 }
-
-
 @import "../componentes/header/header"; //Para que los demas archivos accedan a las variables globales, debemos importart los archivos scss luego de las variables globales
-@import "../componentes/home/home";
-@import "../componentes/planetas/planetas";
-@import "../componentes/Api-nasa/api-nasa";
+@import "../componentes/views/home/home";
+@import "../componentes/views/planetas/planetas";
+@import "../componentes/views/Api-nasa/api-nasa";
 
 * {
     margin: 0;

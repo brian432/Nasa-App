@@ -851,132 +851,6 @@ nav #hamburguesa .linea3 {
   color: #e2e2e2;
 }
 
-#Nasa #AstronomicalImage {
-  margin: 0 auto 3rem auto;
-  max-width: 1000px;
-  position: relative;
-}
-
-#Nasa #AstronomicalImage h2 {
-  text-align: center;
-  margin-top: 0;
-}
-
-#Nasa #AstronomicalImage .div-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 600px;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-#Nasa #AstronomicalImage .div-img img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-#Nasa #AstronomicalImage #descripcion {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-}
-
-#Nasa #TierraApi {
-  text-align: center;
-}
-
-#Nasa #TierraApi .div-img {
-  max-width: 600px;
-  margin: 0 auto;
-  position: relative;
-}
-
-#Nasa #TierraApi .div-img #siguiente {
-  position: absolute;
-  top: 45%;
-  right: 0;
-}
-
-#Nasa #TierraApi .div-img #anterior {
-  position: absolute;
-  top: 45%;
-  left: 0;
-}
-
-#Nasa #TierraApi .div-img #fecha {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-}
-
-#Nasa #TierraApi .div-img button {
-  background: none;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: clamp(1.5rem, 4vw, 4rem);
-  padding: 5px;
-}
-
-#Nasa #MarteApi {
-  margin-top: 3rem;
-}
-
-#Nasa #MarteApi .titulos,
-#Nasa #MarteApi .Info {
-  text-align: center;
-}
-
-#Nasa #MarteApi .camarasDescripcion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  gap: 1rem;
-}
-
-#Nasa #MarteApi .camarasDescripcion .camaras {
-  max-width: 600px;
-}
-
-#Nasa #MarteApi .div-img {
-  max-width: 600px;
-  margin: 0 auto;
-  position: relative;
-}
-
-#Nasa #MarteApi .div-img #siguiente {
-  position: absolute;
-  top: 45%;
-  right: 0;
-}
-
-#Nasa #MarteApi .div-img #anterior {
-  position: absolute;
-  top: 45%;
-  left: 0;
-}
-
-#Nasa #MarteApi .div-img #fecha {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-}
-
-#Nasa #MarteApi .div-img button {
-  background: none;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: clamp(1.5rem, 4vw, 4rem);
-  padding: 5px;
-}
-
 .lds-dual-ring {
   display: inline-block;
   width: 80px;
@@ -1031,6 +905,38 @@ nav #hamburguesa .linea3 {
   margin: auto;
 }
 
+#AstronomicalImage {
+  margin: 0 auto 3rem auto;
+  max-width: 1000px;
+  position: relative;
+}
+
+#AstronomicalImage h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+#AstronomicalImage .div-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#AstronomicalImage .div-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#AstronomicalImage #descripcion {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
 @media screen and (max-width: 768px) {
   #AstronomicalImage .div-img {
     height: 400px !important;
@@ -1041,6 +947,100 @@ nav #hamburguesa .linea3 {
   #AstronomicalImage .div-img {
     height: 300px !important;
   }
+}
+
+#TierraApi {
+  text-align: center;
+}
+
+#TierraApi .div-img {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#TierraApi .div-img #siguiente {
+  position: absolute;
+  top: 45%;
+  right: 0;
+}
+
+#TierraApi .div-img #anterior {
+  position: absolute;
+  top: 45%;
+  left: 0;
+}
+
+#TierraApi .div-img #fecha {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#TierraApi .div-img button {
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: clamp(1.5rem, 4vw, 4rem);
+  padding: 5px;
+}
+
+#MarteApi {
+  margin-top: 3rem;
+}
+
+#MarteApi .titulos,
+#MarteApi .Info {
+  text-align: center;
+}
+
+#MarteApi .camarasDescripcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 1rem;
+}
+
+#MarteApi .camarasDescripcion .camaras {
+  max-width: 600px;
+}
+
+#MarteApi .div-img {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#MarteApi .div-img #siguiente {
+  position: absolute;
+  top: 45%;
+  right: 0;
+}
+
+#MarteApi .div-img #anterior {
+  position: absolute;
+  top: 45%;
+  left: 0;
+}
+
+#MarteApi .div-img #fecha {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#MarteApi .div-img button {
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: clamp(1.5rem, 4vw, 4rem);
+  padding: 5px;
 }
 
 * {

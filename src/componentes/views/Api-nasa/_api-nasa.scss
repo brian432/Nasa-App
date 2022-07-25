@@ -1,105 +1,6 @@
 #Nasa {
     background-image: url(/public/imagenes/fondo3.jpg);
     color: $color-texto;
-    #AstronomicalImage {
-        margin: 0 auto 3rem auto;
-        max-width: 1000px;
-        position: relative;
-        h2 {
-            text-align: center;
-            margin-top: 0;
-        }
-        .div-img {
-            display: flex;
-            height: 600px;
-            margin: 0 auto;
-            text-align: center;
-            margin-bottom: 1rem;
-            img {
-                object-fit: cover;
-            }
-        }
-        #descripcion {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-        }
-    }
-    #TierraApi {
-        text-align: center;
-        .div-img {
-            max-width: 600px;
-            margin: 0 auto;
-            position: relative;
-            #siguiente {
-                position: absolute;
-                top: 45%;
-                right: 0;
-            }
-            #anterior {
-                position: absolute;
-                top: 45%;
-                left: 0;
-            }
-            #fecha {
-                position: absolute;
-                bottom: 10px;
-                left: 10px;
-            }
-            button {
-                background: none;
-                color: white;
-                border: none;
-                cursor: pointer;
-                font-size: clamp(1.5rem, 4vw, 4rem);
-                padding: 5px;
-            }
-        }
-    }
-    #MarteApi {
-        margin-top: 3rem;
-        .titulos,
-        .Info {
-            text-align: center;
-        }
-        .camarasDescripcion {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 1rem;
-            .camaras {
-                max-width: 600px;
-            }
-        }
-        .div-img {
-            max-width: 600px;
-            margin: 0 auto;
-            position: relative;
-            #siguiente {
-                position: absolute;
-                top: 45%;
-                right: 0;
-            }
-            #anterior {
-                position: absolute;
-                top: 45%;
-                left: 0;
-            }
-            #fecha {
-                position: absolute;
-                bottom: 10px;
-                left: 10px;
-            }
-            button {
-                background: none;
-                color: white;
-                border: none;
-                cursor: pointer;
-                font-size: clamp(1.5rem, 4vw, 4rem);
-                padding: 5px;
-            }
-        }
-    }
 }
 .lds-dual-ring {
     display: inline-block;
@@ -124,7 +25,6 @@
         transform: rotate(360deg);
     }
 }
-
 .img-carga {
     align-self: center;
     justify-self: center;
@@ -135,19 +35,6 @@
     right: 0;
     margin: auto;
 }
-
-@media screen and (max-width: 768px) {
-    #AstronomicalImage {
-        .div-img {
-            height: 400px !important;
-        }
-    }
-}
-
-@media screen and (max-width: 426px) {
-    #AstronomicalImage {
-        .div-img {
-            height: 300px !important;
-        }
-    }
-}
+@import '../../astronomicalImage/astronomicalImage';
+@import '../../earth/earth';
+@import '../../mars/mars';

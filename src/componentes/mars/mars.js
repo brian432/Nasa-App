@@ -10,7 +10,6 @@ export const Mars = () => {
             setRover(rover.photos)
         })
     },[])
-    console.log(rover);
     return (
         <section id="MarteApi">
             <div className="Info">
