@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import {  useState } from 'react';
-import data from '../../data.json';
+import data from '../../../data.json';
 export const Home = ({ setState }) => {
     const [contador, setContador] = useState(0);
     const [clases, setClases] = useState("");

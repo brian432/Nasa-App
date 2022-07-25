@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import { Header } from './componentes/header/header'
-import { Home } from './componentes/home/Home';
-import SistemaSolar from './componentes/planetas/sistema-solar';
-import Planetas from './componentes/planetas/planetas';
-import Nasa from './componentes/Api-nasa/api-nasa';
+import { Home } from './componentes/views/home/Home';
+import {SistemaSolar} from './componentes/views/planetas/sistema-solar';
+import {Planetas} from './componentes/views/planetas/planetas';
+import {Nasa} from './componentes/views/Api-nasa/api-nasa';
 import { useState } from 'react'
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Route path='/planetas/:id' element={<Planetas state={state} setState={setState} />} />
         <Route path='/api-nasa' element={<Nasa />} />
         <Route
-          path="*" //Si no hay conincidencia, devolvemos lo que hay en la propiedad element.
+          path="*"
           element={
             <main style={{ display: "flex", padding: "1rem", width: "100vw", height: "100vh", alignItems: "center", justifyContent: "center" }}>
               <p>Sin coincidencia!</p>

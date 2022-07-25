@@ -851,18 +851,18 @@ nav #hamburguesa .linea3 {
   color: #e2e2e2;
 }
 
-#Nasa #ImagenAStronomica {
+#Nasa #AstronomicalImage {
   margin: 0 auto 3rem auto;
   max-width: 1000px;
   position: relative;
 }
 
-#Nasa #ImagenAStronomica h2 {
+#Nasa #AstronomicalImage h2 {
   text-align: center;
   margin-top: 0;
 }
 
-#Nasa #ImagenAStronomica .div-img {
+#Nasa #AstronomicalImage .div-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -872,12 +872,12 @@ nav #hamburguesa .linea3 {
   margin-bottom: 1rem;
 }
 
-#Nasa #ImagenAStronomica .div-img img {
+#Nasa #AstronomicalImage .div-img img {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#Nasa #ImagenAStronomica #descripcion {
+#Nasa #AstronomicalImage #descripcion {
   position: absolute;
   bottom: 10px;
   left: 10px;
@@ -1032,13 +1032,13 @@ nav #hamburguesa .linea3 {
 }
 
 @media screen and (max-width: 768px) {
-  #ImagenAStronomica .div-img {
+  #AstronomicalImage .div-img {
     height: 400px !important;
   }
 }
 
 @media screen and (max-width: 426px) {
-  #ImagenAStronomica .div-img {
+  #AstronomicalImage .div-img {
     height: 300px !important;
   }
 }

@@ -1,6 +1,6 @@
-import data from '../../data.json'
+import data from '../../../data.json'
 
-const SistemaSolar = () => {
+export const SistemaSolar = () => {
     const info = data[0].Sistema_Solar
     return (
         <div id="planetas" >
@@ -34,5 +34,3 @@ const SistemaSolar = () => {
         </div >
     )
 }
-
-export default SistemaSolar;

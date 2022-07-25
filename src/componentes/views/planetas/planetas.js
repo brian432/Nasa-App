@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
-import data from '../../data.json'
-const Planetas = ({ state, setState }) => {
+import data from '../../../data.json'
 
+export const Planetas = ({ state, setState }) => {
     const info = data[0].Sistema_Solar.Planetas[state]
     const { id } = useParams();
     useEffect(() => {
@@ -33,7 +33,7 @@ const Planetas = ({ state, setState }) => {
             <div className="div-section">
                 <div className="relleno"></div>
                 <div className="div-img">
-                    <img src={`/Nasa-App/imagenes/${state}.png`} alt={state} />
+                    <img src={`imagenes/${state}.png`} alt={state} />
                 </div>
                 <div className="descripcion">
                     <h2>{state}</h2>
@@ -47,5 +47,3 @@ const Planetas = ({ state, setState }) => {
         </div >
     )
 }
-
-export default Planetas;
