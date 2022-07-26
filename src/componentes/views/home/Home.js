@@ -19,7 +19,7 @@ export const Home = ({ setState }) => {
             <div className={contador === 1 ? 'adelante' : contador !== 0 ? 'none' : 'atras'}>
                 <img src="imagenes/Sol.png" alt="" />
             </div>
-            <div className={contador === 2 ? 'siguiente' : contador === 3 ? 'atras' : contador == 4 ? 'adelante' : 'planetaFuera'} onClick={() => { setContador(3); setClases("click"); setBoton("Tierra") }}>
+            <div className={contador === 2 ? 'siguiente' : contador === 3 ? 'atras' : contador === 4 ? 'adelante' : 'planetaFuera'} onClick={() => { setContador(3); setClases("click"); setBoton("Tierra") }}>
                 <img src="imagenes/Tierra.png" alt="" />
             </div>
             <div className={contador === 3 ? 'siguiente' : contador === 4 ? 'atras' : contador === 5 ? 'adelante' : 'planetaFuera'} onClick={() => { setContador(4); setClases(""); setBoton("Marte") }}>

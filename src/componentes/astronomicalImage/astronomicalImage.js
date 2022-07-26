@@ -1,16 +1,10 @@
-import { useEffect, useState } from "react";
-import { getNasaApi } from "../../services/apiConfig";
+import { useApi } from "../../hooks/useApi"
 export const AstronomicalImage = () => {
-    const [planetary, setPlanetary] = useState([]);
-    useEffect(()=>{
-        getNasaApi().then(({planetary})=>{
-            setPlanetary(planetary)
-        })
-    },[])
+    const { planetary } = useApi()
     return (
         <section id="AstronomicalImage">
             <h2 className="margin">Imagen astronómica del día</h2>
-            <a href={planetary.hdurl} className="div-img" target="_blank">
+            <a href={planetary.hdurl} className="div-img" target="_blank" rel="noreferrer">
                 <img src={/youtube/.test(planetary.url) ? 'imagenes/fotoDeCarga.jpg' : planetary.url} alt="" />
             </a>
             <div id="descripcion">

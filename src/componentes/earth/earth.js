@@ -1,18 +1,11 @@
-import { useEffect, useState } from "react";
-import { getNasaApi } from "../../services/apiConfig";
+import { useState } from "react";
 import data from '../../data.json'
-
+import { useApi } from "../../hooks/useApi";
 const { REACT_APP_API_KEY: API_KEY, REACT_APP_API_IMG: API_IMG } = process.env
-
 export const Earth = () => {
-    const [epic, setEpic] = useState([]);
     const [numero, setNumero] = useState(0);
     const [imagen, setImagen] = useState("");
-    useEffect(() => {
-        getNasaApi().then(({ epic }) => {
-            setEpic(epic)
-        })
-    }, [])
+    const { epic } = useApi()
     const src_img = epic[numero] && `${API_IMG}${epic[numero]?.date.split(" ")[0].split("-").join("/")}/png/${epic[numero]?.image}.png${API_KEY}`
     return (
         <section id="TierraApi">

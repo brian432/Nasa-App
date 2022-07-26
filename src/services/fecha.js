@@ -1,4 +1,4 @@
-//Funcion devolver fecha actual -2 dias para asegurar que las peticiones de las imagenes funcione
+//Funcion returnDate actual -2 dias para asegurar que las peticiones de las imagenes funcione
 export const returnDate = () => {
     const fecha = [new Date().getDate() - 2, new Date().getMonth(), new Date().getFullYear()];
     const meses = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];

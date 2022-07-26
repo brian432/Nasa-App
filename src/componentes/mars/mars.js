@@ -1,15 +1,10 @@
 import data from '../../data.json'
-import { useEffect, useState } from 'react';
-import { getNasaApi } from '../../services/apiConfig';
+import { useState } from 'react';
+import { useApi } from '../../hooks/useApi'
 export const Mars = () => {
     const [numero, setNumero] = useState(0);
     const [imagen, setImagen] = useState("");
-    const [rover, setRover] = useState([])
-    useEffect(()=>{
-        getNasaApi().then(({rover})=>{
-            setRover(rover.photos)
-        })
-    },[])
+    const { rover } = useApi()
     return (
         <section id="MarteApi">
             <div className="Info">
