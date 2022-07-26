@@ -849,6 +849,7 @@ nav #hamburguesa .linea3 {
 #Nasa {
   background-image: url(/public/imagenes/fondo3.jpg);
   color: #e2e2e2;
+  padding-bottom: 1rem !important;
 }
 
 .lds-dual-ring {
