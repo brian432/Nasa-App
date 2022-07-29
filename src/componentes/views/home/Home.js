@@ -37,7 +37,6 @@ export const Home = ({ setState }) => {
             <div className={contador === 7 ? 'siguiente' : contador === 8 ? 'atras' : 'planetaFuera'} onClick={() => { setContador(8); setClases(""); setBoton("Neptuno") }}>
                 <img src="imagenes/Neptuno.png" alt="" />
             </div>
-            {
                 <div id="datos">
                     <div className={clases ? "titulo fadeIn" : 'titulo fadeOut'}>
                         <h1>{planetas[contador]}</h1>
@@ -55,7 +54,6 @@ export const Home = ({ setState }) => {
                         </div>
                     </div>
                 </div>
-            }
         </div>
     )
 }

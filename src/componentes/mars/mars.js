@@ -1,8 +1,6 @@
 import data from '../../data.json'
 import { useState } from 'react';
 import { useApi } from '../../hooks/useApi'
-import Skeleton from 'react-loading-skeleton'
-import 'react-loading-skeleton/dist/skeleton.css'
 export const Mars = () => {
     const [numero, setNumero] = useState(0);
     const [imagen, setImagen] = useState("");
@@ -26,7 +24,7 @@ export const Mars = () => {
                     </div>
                 )}
             </div>
-            {rover.length > 0 ?
+            {rover.length > 0 &&
                 imagen !== "2" ?
                     <div className="div-img">
                         <img src={rover[numero]?.img_src} onLoad={() => setImagen("2")} alt="" />
@@ -38,10 +36,7 @@ export const Mars = () => {
                         {numero < rover.length - 1 && <button id="siguiente" onClick={() => { setNumero(numero + 1); setImagen("1") }}>&#10095;</button>}
                         {numero > 0 && <button id="anterior" onClick={() => { setNumero(numero - 1); setImagen("1") }}>&#10094;</button>}
                         <p id="fecha">{rover[numero]?.camera?.name}<br /> {rover[numero]?.earth_date}</p>
-                    </div> :
-                <div className="div-img">
-                    <Skeleton width={600} height={400} baseColor={"#566981"}/>
-                </div>
+                    </div> 
             }
         </section >
     )

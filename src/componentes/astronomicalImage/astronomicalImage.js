@@ -1,3 +1,4 @@
+import React from "react"
 import { useApi } from "../../hooks/useApi"
 export const AstronomicalImage = () => {
     const { planetary } = useApi()
