@@ -7,16 +7,15 @@ const {
 } = process.env
 
 export const getNasaApi = async () => {
-    //imagen astronomica del dia
-    const responsePlanetary = await fetch(`${API_PLANETARY}${API_KEY}`);
-    const planetary = await responsePlanetary.json()
-
-    //imagenes de la tierra
-    const responseEpic = await fetch(`${API_EPIC}${API_KEY}`)
-    const epic = await responseEpic.json()
-
-    //imagenes del rover
-    const responseRover = await fetch(`${API_ROVER}${returnDate()}`)
-    const rover = await responseRover.json()
-    return { planetary, epic, rover }
+    try {
+        const results = await Promise.all([
+            fetch(`${API_PLANETARY}${API_KEY}`),
+            fetch(`${API_EPIC}${API_KEY}`),
+            fetch(`${API_ROVER}${returnDate()}`)
+        ])
+        const [planetary, epic, rover] = await Promise.all(results.map(result => result.json()))
+        return { planetary, epic, rover }
+    } catch (error) {
+        console.log(error)
+    }
 };
