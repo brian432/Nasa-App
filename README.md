@@ -10,7 +10,7 @@
     
 # Preview
 
-![home](https://user-images.githubusercontent.com/80001602/187544443-a796b3a8-3e92-497d-b3c7-398cce11f4c0.jpg)
+![Home](https://user-images.githubusercontent.com/80001602/189421086-c09ff879-2a51-4d52-9955-bd3f607a8a7c.jpg)
 
 ![Sistema Solar](https://user-images.githubusercontent.com/80001602/187544445-2e9f7225-b76d-4e1c-8aac-79fe5eb49e5c.png)
 
